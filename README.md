@@ -1,4 +1,6 @@
 # EV01 Proyecto CRIATURAS
+
+![Diagrama de clases]()
 ## 2 Data Access Object
 Vamos a mejorar la arquitectura de nuestra aplicación.
 
