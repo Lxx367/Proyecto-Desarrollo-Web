@@ -3,10 +3,8 @@ require_once '../models/creature.php';
 require_once '../../persistence/DAO/creatureDAO.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    //Llamo a la función en cuanto se redirige el action a esta página mediante metodo POST
    createAction();
 }
-// Función encargada de crear nuevas ofertas
 function createAction() {
     $name = $_POST["inputName"];
     $description = $_POST["inputDescription"];
@@ -26,6 +24,5 @@ function createAction() {
     $creatureDAO = new creatureDAO();
     $creatureDAO->insert($creature);
  
-    //Redirigimos a este path al usuario tras completar el código (insert creature)
     header('Location: ../../index.php');
 }
